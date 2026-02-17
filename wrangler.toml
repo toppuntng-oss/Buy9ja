@@ -1,8 +1,16 @@
+# Cloudflare Pages Configuration for Buy9ja
+# https://developers.cloudflare.com/pages/
+
 name = "buy9ja"
 compatibility_date = "2024-01-01"
 
+# Pages build output directory
 pages_build_output_dir = "dist"
 
-[site]
-bucket = "./dist"
+# Environment variables are set in Cloudflare dashboard or via CLI
+# Do not put sensitive values here - use dashboard or wrangler secrets
+
+# For deployment via Wrangler CLI:
+# npx wrangler pages deploy dist --project-name=buy9ja
+
 
